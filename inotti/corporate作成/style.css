@@ -302,6 +302,28 @@
     height: 16px;
     width: 16px;
   }
+/* sidebar */ 
+  #main__sidebar {
+    width: 320px;
+    padding: 40px;
+    border-radius: 24px;
+    background: #F5F5F5;
+  }
+  #main__sidebar__Category {
+    position: relative;
+    margin-bottom :64px;
+  }
+  .main__sidebar_icon {
+    position: absolute;
+    top: -32px;
+    left: -22px;
+  }
+  .main__sidebar_icon img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+  }
+
 
 
 /* sp版 */
