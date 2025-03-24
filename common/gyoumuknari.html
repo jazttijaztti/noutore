@@ -8,6 +8,62 @@
 <body>
   <div id ="wrapper">
   <h1>業務管理</h1>
+    <div class="controls">
+    <button id="readButton">▶️ 再生</button>
+    <button id="stopButton">⏹️ 停止</button>
+    <br><br>
+    <label for="speedRange">読み上げ速度: </label>
+    <input type="range" id="speedRange" min="0.5" max="2" step="0.1" value="1">
+    <span id="speedValue">1.0x</span>
+  </div>
+
+  <script>
+    const readButton = document.getElementById("readButton");
+    const stopButton = document.getElementById("stopButton");
+    const speedRange = document.getElementById("speedRange");
+    const speedValue = document.getElementById("speedValue");
+
+    let currentIndex = 0;
+    let lines = [];
+    let currentRate = parseFloat(speedRange.value);
+    let isStopped = false;
+
+    speedRange.addEventListener("input", () => {
+      currentRate = parseFloat(speedRange.value);
+      speedValue.textContent = currentRate.toFixed(1) + "x";
+    });
+
+    const speakLine = (index) => {
+      if (isStopped || index >= lines.length) return;
+
+      const utterance = new SpeechSynthesisUtterance(lines[index].trim());
+      utterance.lang = "ja-JP";
+      utterance.rate = currentRate;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+
+      utterance.onend = () => {
+        setTimeout(() => {
+          speakLine(index + 1);
+        }, 400); // 文と文の間隔
+      };
+
+      window.speechSynthesis.speak(utterance);
+    };
+
+    readButton.addEventListener("click", () => {
+      window.speechSynthesis.cancel(); // 念のためストップ
+      isStopped = false;
+      const allText = document.body.innerText;
+      lines = allText.split(/\n|。|！|？|\r/g).filter(line => line.trim() !== "");
+      speakLine(0);
+    });
+
+    stopButton.addEventListener("click", () => {
+      window.speechSynthesis.cancel();
+      isStopped = true;
+    });
+  </script>
     <section class="block">
 
 
