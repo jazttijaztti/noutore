@@ -11,3 +11,137 @@
   font-size: medium;
   font-weight: normal;
 }
+/* gyoumukanri.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #2980b9;
+}
+
+#speedRange {
+  vertical-align: middle;
+}
+
+#speedValue {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.block {
+  margin-bottom: 2rem;
+}
+
+.ino_cycleblock {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+}
+
+.ino_gyoumutitle {
+  font-size: 1.5rem;
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.ino_todolist {
+  list-style: none;
+  padding: 0;
+}
+
+.ino_todolist li {
+  margin-bottom: 1.5rem;
+}
+
+.ino_todolist_task-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ino_todolist_task-detail {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ino_todolist_task-detail h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.ino_todolist_task-detail_purpose_wrapper_textblock p,
+.ino_todolist_task-detail_process_wrapper_list_content p,
+.ino_todolist_task-detail_process_wrapper_list_worker p,
+.ino_todolist_task-detail_process_wrapper_list_needs p {
+  margin: 0.2rem 0;
+}
+
+.ino_todolist_task-detail_process_wrapper_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ino_todolist_task-detail_process_wrapper_list > li {
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.ino_todolist_task-detail_process_wrapper_list h5,
+.ino_todolist_task-detail_process_wrapper_list_needs h6 {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #2c3e50;
+}
+
+.ino_todolist_task-detail_process_wrapper_list_needs ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+
+/*  井上エリアここまで    */
