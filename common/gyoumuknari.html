@@ -77,10 +77,99 @@
           <h2 class="ino_gyoumutitle">月次業務<h2>
           <ul class="ino_todolist">
             <li>
-              <div>
-                <h3>記帳に必要な資料の依頼（※井上が実施しているわけでないですが業務全体像の理解のために記載）</h3>
-                <div>
-                  <div>作業工程</div>
+              <div class="ino_todolist_block">
+                <h3 class="ino_todolist_task-name">slackを使った記帳に必要な資料の依頼（将来的にはプロダクト）<br>（※井上が実施しているわけでないですが業務全体像の理解のために記載）</h3>
+                <div class="ino_todolist_task-detail">
+                  <div class="ino_todolist_task-detail_purpose_wrapper">
+                    <h4>作業の目的</h4>
+                    <div class="ino_todolist_task-detail_purpose_wrapper_textblock">
+                      <p>試算表、所得税納付に必要な情報の回収</p>
+                      <p>回収する情報一覧</p>
+                      <ul>
+                        <li>取引先が発行した請求書(yyyy年mm月発生分の支払請求書)</li>
+                        <li>貴社が発行した請求書(yyyy年mm月発生分の売上請求書)</li>
+                        <li>事業用以外のカードや現金で支払った経費の領収書（freee経費精算で申請するものは除く)</li>
+                        <li>freeeにAPI連携されていない銀行の明細</li>
+                        <li>freeeにAPI連携されていない法人カードの明細</li>
+                        <li>freeeにAPI連携されていない個人カードの明細</li>
+                        <li>新規で開設された銀行口座やクレジットカードの明細(freeeにAPI連携されている場合を除く)</li>
+                        <li>新規でご契約された銀行・クレカ・固定資産等に関する確認</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="ino_todolist_task-detail_process_wrapper">
+                    <h4>作業工程</h4>
+                    <ul class="ino_todolist_task-detail_process_wrapper_list">
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容①</h5>
+                              <p>内容の説明</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>人名・人名・人名</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>バイト・一般従業員・リーダー</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加/複数のトリガーにより正比例しない</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容②</h5>
+                              <p>内容の説明</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>人名・人名・人名</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>バイト・一般従業員・リーダー</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加/複数のトリガーにより正比例しない</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -122,6 +211,57 @@
       <h1>ある1日の井上の業務</h1>
         <h2>3月25日（火）</h2>
 
+      <!-- テンプレート
+                <h3 class="ino_todolist_task-name">タスク名</h3>
+                <div class="ino_todolist_task-detail">
+                  <div class="ino_todolist_task-detail_purpose_wrapper">
+                    <h4>作業の目的</h4>
+                    <div class="ino_todolist_task-detail_purpose_wrapper_textblock">
+                      <p>目的について</p>
+                    </div>
+                  </div>
+                  <div class="ino_todolist_task-detail_process_wrapper">
+                    <h4>作業工程</h4>
+                    <ul class="ino_todolist_task-detail_process_wrapper_list">
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容①</h5>
+                              <p>内容の説明</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>人名・人名・人名</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>バイト・一般従業員・リーダー</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加/複数のトリガーにより正比例しない</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+      -->
     </section>
   </div>
 </body>
