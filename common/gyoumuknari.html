@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="gyoumukanri.css">
   <title></title>
+  <script>
+    $(function(){
+      $('.ino_button').on('click',function(){
+        $('.ino_todolist_task-detail').sideToggle();
+      });
+
+    });
+  </script> 
 </head>
 <body>
   <div id ="wrapper">
@@ -76,24 +86,27 @@
         <div class="ino_cycleblock">
           <h2 class="ino_gyoumutitle">月次業務<h2>
           <ul class="ino_todolist">
-            <li>
+            <li class="ino_todolist_list">
               <div class="ino_todolist_block">
-                <h3 class="ino_todolist_task-name">slackを使った記帳に必要な資料の依頼（将来的にはプロダクト）<br>（※井上が実施しているわけでないですが業務全体像の理解のために記載）</h3>
+                <div class="flex-between-center">
+                  <h3 class="ino_todolist_task-name">slackを使った記帳に必要な資料の依頼（将来的にはプロダクト）<br>（※井上が実施しているわけでないですが業務全体像の理解のために記載）</h3>
+                  <p class="ino_button">詳細</p>
+                </div>
                 <div class="ino_todolist_task-detail">
                   <div class="ino_todolist_task-detail_purpose_wrapper">
                     <h4>作業の目的</h4>
                     <div class="ino_todolist_task-detail_purpose_wrapper_textblock">
                       <p>試算表、所得税納付に必要な情報の回収</p>
-                      <p>回収する情報一覧</p>
+                      <p>▼ 回収する情報一覧</p>
                       <ul>
-                        <li>取引先が発行した請求書(yyyy年mm月発生分の支払請求書)</li>
-                        <li>貴社が発行した請求書(yyyy年mm月発生分の売上請求書)</li>
-                        <li>事業用以外のカードや現金で支払った経費の領収書（freee経費精算で申請するものは除く)</li>
-                        <li>freeeにAPI連携されていない銀行の明細</li>
-                        <li>freeeにAPI連携されていない法人カードの明細</li>
-                        <li>freeeにAPI連携されていない個人カードの明細</li>
-                        <li>新規で開設された銀行口座やクレジットカードの明細(freeeにAPI連携されている場合を除く)</li>
-                        <li>新規でご契約された銀行・クレカ・固定資産等に関する確認</li>
+                        <li>1. 取引先が発行した請求書(yyyy年mm月発生分の支払請求書)</li>
+                        <li>2. 貴社が発行した請求書(yyyy年mm月発生分の売上請求書)</li>
+                        <li>3. 事業用以外のカードや現金で支払った経費の領収書（freee経費精算で申請するものは除く)</li>
+                        <li>4. freeeにAPI連携されていない銀行の明細</li>
+                        <li>5. freeeにAPI連携されていない法人カードの明細</li>
+                        <li>6. freeeにAPI連携されていない個人カードの明細</li>
+                        <li>7. 新規で開設された銀行口座やクレジットカードの明細(freeeにAPI連携されている場合を除く)</li>
+                        <li>8. 新規でご契約された銀行・クレカ・固定資産等に関する確認</li>
                       </ul>
                     </div>
                   </div>
@@ -173,9 +186,10 @@
                 </div>
               </div>
             </li>
-            <li>
-              <div>
-                <h3>所得税納付</h3>
+            <li class="ino_todolist_list">
+              <div class="flex-between-center">
+                <h3 class="ino_todolist_task-name">所得税納付</h3>
+                <p class="ino_button">詳細</p>
               </div>
             </li>
           </ul>
@@ -183,14 +197,16 @@
         <div class="ino_cycleblock">
           <h2 class="ino_gyoumutitle">週次業務<h2>
           <ul class="ino_todolist">
-            <li>
-              <div>
-                <h3>会計ユニットリーダーMTG</h3>
+            <li class="ino_todolist_list">
+              <div class="flex-between-center">
+                <h3 class="ino_todolist_task-name">会計ユニットリーダーMTG</h3>
+                <p class="ino_button">詳細</p>
               </div>
             </li>
-            <li>
-              <div>
-                <h3>免税チームMTG</h3>
+            <li class="ino_todolist_list">
+              <div class="flex-between-center">
+                <h3 class="ino_todolist_task-name">免税チームMTG</h3>
+                <p class="ino_button">詳細</p>
               </div>
             </li>
           </ul>
@@ -198,12 +214,18 @@
         <div class="ino_cycleblock">
           <h2 class="ino_gyoumutitle">日次業務<h2>
           <ul class="ino_todolist">
-            <li>
-              <div>
-                <h3>PS朝会</h3>
+            <li class="ino_todolist_list">
+              <div class="flex-between-center">
+                <h3 class="ino_todolist_task-name">PS朝会</h3>
+                <p class="ino_button">詳細</p>
               </div>
             </li>
-                <h3>試算表作成</h3>
+            <li class="ino_todolist_list">
+              <div class="flex-between-center">
+                <h3 class="ino_todolist_task-name">試算表作成</h3>
+                 <p class="ino_button">詳細</p>
+              </div>
+            </li>
           </ul>
         </div>
 
