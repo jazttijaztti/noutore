@@ -89,6 +89,7 @@ h1 {
   border: 1px solid #000;
   border-radius: 20px;
   padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }
 
 .ino_cycleblock {
@@ -120,6 +121,13 @@ h1 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.ino_todolist_task-name::before {
+  content: "♦️";
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 .ino_todolist_task-detail {

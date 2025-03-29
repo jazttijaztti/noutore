@@ -9,7 +9,7 @@
   <script>
     $(function(){
       $('.ino_button').on('click',function(){
-        $('.ino_todolist_task-detail').sideToggle();
+        $('.ino_todolist_task-detail').slideToggle();
       });
 
     });
@@ -202,6 +202,90 @@
                 <h3 class="ino_todolist_task-name">会計ユニットリーダーMTG</h3>
                 <p class="ino_button">詳細</p>
               </div>
+                <div class="ino_todolist_task-detail">
+                  <div class="ino_todolist_task-detail_purpose_wrapper">
+                    <h4>作業の目的</h4>
+                    <div class="ino_todolist_task-detail_purpose_wrapper_textblock">
+                      <p>【前提】試算表を作成するチームはいくつかのユニット単位に分けられています。<br>免税と課税で分かれてさらに管理の幅に応じてユニットが生成され>ます。<br>そのユニットのリーダーが集まり試算表作成作業の中で感じた課題感を話し、SoVaの対応方針を決定するための会議です。</p>
+                    </div>
+                  </div>
+                  <div class="ino_todolist_task-detail_process_wrapper">
+                    <h4>作業工程</h4>
+                    <ul class="ino_todolist_task-detail_process_wrapper_list">
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容①</h5>
+                              <p>【事前準備】<br>各ユニットリーダーが課題を「改善意見シート」というスプレッドシートに記載します。<br>課題の記載と合わせて、話し合うべき優先順位をA~Cで割り振ります。（割り振りは記載者の独断と偏見によります）</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>会計ユニットリーダー</h5>
+                              <p>ささっきー・だいき・いのうえ</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>会計ユニットリーダー</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>複数のトリガーにより正比例しない</p>
+                                    <p>内容の複雑性が増すほど記述量が増える</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容②</h5>
+                              <p>内容の説明</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>人名・人名・人名</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>バイト・一般従業員・リーダー</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加/複数のトリガーにより正比例しない</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </li>
             <li class="ino_todolist_list">
               <div class="flex-between-center">
@@ -234,7 +318,6 @@
         <h2>3月25日（火）</h2>
 
       <!-- テンプレート
-                <h3 class="ino_todolist_task-name">タスク名</h3>
                 <div class="ino_todolist_task-detail">
                   <div class="ino_todolist_task-detail_purpose_wrapper">
                     <h4>作業の目的</h4>
