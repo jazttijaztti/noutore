@@ -569,13 +569,13 @@
                           <li>
                             <div class="ino_todolist_task-detail_process_wrapper_list_content">
                               <h5>作業内容⑧</h5>
-                              <p>内容の説明</p>
+                              <p>▶︎役員報酬と給与を給与支払口座と紐づけて処理する<br><br>【目的】<br>給与の支払いが給与明細通りに行われているか確認する<br><br>【具体作業】<br>銀行明細から役員・従業員への出金を確認したら、「自動で経理」の「口座振替」により「給与支払口座（負債）」の減少仕訳を登録する。<br>この時、給与支払口座という負債勘定の残高が0円になっていることを確認する。0円になっていなければ、給与明細通りの支払いがされていない可能性があるので給与計算チームに連携する。</p>
                             </div>
                           </li>
                           <li>
                             <div class="ino_todolist_task-detail_process_wrapper_list_worker">
                               <h5>作業実施者</h5>
-                              <p>人名・人名・人名</p>
+                              <p>ユニットメンバー</p>
                             </div>
                           </li>
                           <li>
@@ -585,13 +585,295 @@
                                 <li>
                                   <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
                                     <h6>必要なレベル</h6>
-                                    <p>バイト・一般従業員・リーダー</p>
+                                    <p>試算表作成のオンボーディングを受けた人なら誰でも</p>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
                                     <h6>工数の性質</h6>
-                                    <p>正比例で増加/複数のトリガーにより正比例しない</p>
+                                    <p>複数のトリガーにより正比例しない<br>変動要因は2つ。<br>1. 従業員の人数<br>2. 給与支払口座残高が0円にならなかった場合に、その理由の調査が発生</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑨</h5>
+                              <p>▶︎金額1万未満の費用を処理する<br><br>【目的】<br>金額的に些少なものについて自動登録ルールを作成し、将来的に手動で登録するべき取引を減らす。<br><br>【具体作業】<br>自動で経理の画面から自動登録ルールを作成しながら取引を登録する。</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>試算表作成のオンボーディングを受けた人なら誰でも</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加<br>異なる取引先の件数の数に比例</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑩</h5>
+                              <p>▶︎金額1万~10万円の費用を処理する<br><br>【目的】<br>課税事業者の場合は1万円以上の取引については消費税上の処理を意識する必要がある。一方で、免税事業者の場合、この金額範囲の支出も科目選択の重要性はそれほど高くない。<br><br>【具体作業】<br>課税：取引先の領収書・請求書の共有があれば、消費税を10％で登録を行い、共有がなければ消費税の税額控除対象外として登録を行う。取引内容が不明の場合には、お客さんに取引内容の質問を行う。<br>免税：領収書や請求書の共有は不要で、取引内容が想定できれば登録を行なってしまって良い。取引内容が不明の場合には、お客さんに取引内容の質問を行う。</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>課税：消費税に関する知識が必要（要件定義は未了）<br>免税：試算表作成のオンボーディングを受けた人なら誰でも
+</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>複数のトリガーにより正比例しない<br>変動要因は2つ。<br>1. 異なる取引先の件数<br>2. 取引内容が不明な取引の件数</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑪</h5>
+                              <p>▶︎金額10万円~の費用を処理する<br><br>【目的】<br>固定資産計上の必要の有無を確認しながら記帳を行う。<br><br>【具体作業】<br>固定資産は税務調査で論点になる可能性もあるため、原則、請求書や領収書などの証憑をもらい、その上で処理する。（内容が明らかなものは不要）</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>課税：消費税に関する知識が必要（要件定義は未了）<br>免税：試算表作成のオンボーディングを受けた人なら誰でも</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>複数のトリガーにより正比例しない<br>変動要因は2つ。<br>1. 異なる取引先の件数<br>2. 取引内容が不明な取引の件数<br>3. 固定資産の種類</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑫</h5>
+                              <p>▶︎領収書項目を役員借入金に振り返る<br><br>【目的】<br>作業内容⑤で未決済取引（未払費用）として登録されている領収書と支払請求書のうち、領収書について、未払費用から役員借入金に振り替える。<br><br>【具体作業】<br>「取引の一覧」で「支出・未決済・添付あり」で絞り込みを行い、添付画像を確認して、領収書のみチェックボックスにチェックを入れ、一括で決済の口座を役員資金に指定し「決済済み」に変更する。</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>誰でも実施可能<br>※試算表作成のオンボーディングも不要</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加<br>異なる取引先の件数の数に比例</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑬</h5>
+                              <p>▶︎残高推移表でPL項目を確認する<br><br>【目的】<br>損益の記帳に誤りがないかを確認する。前月までの会計処理との整合性がとれてない可能性があるため、その点を意識して調べる。<br><br>【具体作業】<br>freeeの月次推移表を見ながら、セルフレビューチェックリストというチェックリストにある項目ごとに確認を実施する。
+</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>課税：消費税に関する知識が必要（要件定義は未了）<br>免税：試算表作成のオンボーディングを受けた人なら誰でも</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>複数のトリガーにより正比例しない<br>複数の要因につき変動の可能性あり</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑭</h5>
+                              <p>▶︎残高推移表でBS項目を確認する<br><br>【目的】<br>BS残高に誤りがないかを確認する。BSの残高については、あるべき残高という形があるので、その点を意識したチェックを行う。<br><br>【具体作業】<br>freeeの試算表を見ながら、セルフレビューチェックリストというチェックリストにある項目ごとに確認を実施する。</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>試算表作成のオンボーディングを受けた人なら誰でも</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>複数のトリガーにより正比例しない<br>複数の要因につき変動の可能性あり</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑮</h5>
+                              <p>▶︎タイムライン機能を使い、預金が帳簿と実際であっているか確認する<br><br>【目的】<br>預金残高について、freee会計上での記帳結果と実際の預金残高は、簿記の性質上、通常一致する。<br><br>【具体作業】<br>freeeの口座・タイムライン機能を使い、預金の残高推移が帳簿と実際で一致しているか確認する。</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>試算表作成のオンボーディングを受けた人なら誰でも</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加<br>銀行口座の数に比例</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                              <h5>作業内容⑯</h5>
+                              <p>▶︎メモをもとに質問票を作成する<br><br>【目的】<br>これまでの作業の中で発生した不明点をメモを元にお客さんに質問する。質問票の作成の際には、これを読んでお客さんは答えられるか？「これは何ですか？」より「これは〇〇であっていますか？」の方がより答えやすい、などお客さんの負担の少ない質問法を意識する。<br><br>【具体作業】<br>質問票テンプレ集を参考に質問票を作成する。</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                              <h5>作業実施者</h5>
+                              <p>ユニットメンバー</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="ino_todolist_task-detail_process_wrapper_list_needs">
+                              <h5>作業実施者の要件</h5>
+                              <ul>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                                    <h6>必要なレベル</h6>
+                                    <p>試算表作成のオンボーディングを受けた人なら誰でも</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="ino_todolist_task-detail_process_wrapper_list_needs-time">
+                                    <h6>工数の性質</h6>
+                                    <p>正比例で増加<br>質問の数に比例</p>
                                   </div>
                                 </li>
                               </ul>
