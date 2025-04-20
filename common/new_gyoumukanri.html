@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="new_gyoumukanri.css">
+  <script>
+    $(function(){
+      $('.ino_button').on('click', function(){
+       $(this).closest('.ino_todolist_list').find('.ino_todolist_task-detail').slideToggle(1500);
+      });
+    });
+  </script>
+</head>
+<body>
+  <section class="block">
+    <h1>井上の1ヶ月の業務の内容</h1>
+    <div class="ino_cycleblock">
+      <h2 class="ino_gyoumutitle">日次業務<h2>
+      <ul class="ino_todolist">
+        <li class="ino_todolist_list">
+          <div class="flex-between-center">
+            <h3 class="ino_todolist_task-name">試算表作成</h3>
+            <p class="ino_button">詳細</p>
+          </div>
+          <div class="ino_todolist_task-detail">
+            <div class="ino_todolist_task-detail_purpose_wrapper">
+              <h4>作業の目的</h4>
+              <div class="ino_todolist_task-detail_purpose_wrapper_textblock">
+                <p>目的について</p>
+              </div>
+            </div>
+            <div class="ino_todolist_task-detail_process_wrapper">
+              <h4>作業工程</h4>
+              <ul class="ino_todolist_task-detail_process_wrapper_list">
+                <li>
+                  <ul>
+                    <li>
+                      <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                        <h5>手順1</h5>
+                        <p>概要・タイトル</p>
+                        <ul>
+                          <li>
+                            <div>
+                              <div>
+                                <h6>手順1-1</h6>
+                                <p><span>工数</span>：正比例増加<p>
+                              </div>
+                              <p>作業内容の詳細</p>
+                            </div>
+                            <div>
+                              <h6>用語・機能の説明</h6>
+                              <p></p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                        <h5>作業実施者</h5>
+                        <p>人名・人名・人名</p>
+                        <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                          <h6>必要なレベル</h6>
+                          <p></p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+ <!-- テンプレート
+          <div class="ino_todolist_task-detail">
+            <div class="ino_todolist_task-detail_purpose_wrapper">
+              <h4>作業の目的</h4>
+              <div class="ino_todolist_task-detail_purpose_wrapper_textblock">
+                <p>目的について</p>
+              </div>
+            </div>
+            <div class="ino_todolist_task-detail_process_wrapper">
+              <h4>作業工程</h4>
+              <ul class="ino_todolist_task-detail_process_wrapper_list">
+                <li>
+                  <ul>
+                    <li>
+                      <div class="ino_todolist_task-detail_process_wrapper_list_content">
+                        <h5>手順1</h5>
+                        <p>概要・タイトル</p>
+                        <ul>
+                          <li>
+                            <div>
+                              <div>
+                                <h7>手順1-1</h7>
+                                <p><span>工数</span>：正比例増加<p>
+                              </div>
+                              <p>作業内容の詳細</p>
+                            </div>
+                            <div>
+                              <h7>用語・機能の説明</h7>
+                              <p></p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="ino_todolist_task-detail_process_wrapper_list_worker">
+                        <h5>作業実施者</h5>
+                        <p>人名・人名・人名</p>
+                        <div class="ino_todolist_task-detail_process_wrapper_list_needs-revel">
+                          <h6>必要なレベル</h6>
+                          <p></p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      -->
+
+  </section>
+</body>
+</html>
