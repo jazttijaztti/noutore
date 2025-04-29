@@ -226,9 +226,8 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b0c4de;
-  border-radius: 8px;
-  padding-left: 1rem;
+  border: 1px solid #b0c4de;
+  border-radius: 20px;
 }
 
 .ino_todolist_task-detail_process_wrapper_list_content p {

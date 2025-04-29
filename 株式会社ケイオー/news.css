@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* header_part */
+
+header {
+  margin: 16px 32px;
+  padding: 16px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #eee;
+}
+#header_company-name p {
+  font-size: 16px;
+  font-weight: 700;
+}
+#header_company-name p span {
+  font-size: 24px;
+  font-weight: 700;
+}
