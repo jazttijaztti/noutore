@@ -17,6 +17,10 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 16px #eee;
 }
+#header-left {
+  display: flex;
+  align-items: center;
+}
 #header_company-name p {
   font-size: 16px;
   font-weight: 700;
@@ -25,3 +29,51 @@ header {
   font-size: 24px;
   font-weight: 700;
 }
+#header_manu {
+  margin-left: 64px;
+}
+#header_manu ul {
+  display: flex;
+  align-items: center;
+}
+#header_manu ul li{
+  margin-right: 32px;
+  font-size: 16px;
+  font-weight: 400;
+}
+#header_access {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 64px;
+}
+#header_access-call {
+  border: 2px solid #ffea00;
+  border-radius: 40px;
+}
+#header_access-call p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500; 
+}
+#header_access-call p:last-child {
+  text-align: center;
+  font-size: 8px;
+  font-weight: 400;
+  color: #eee;
+}
+#header_access-mail {
+  background-color: #ffea00;
+  border-radius: 20px;
+}
+
+
+/* よく使うcss */
+  margin: ;
+  font-size: ;
+  font-weight: ;
+  
+  display: flex;
+  justify-content: ;
+  align-items: ;
+
