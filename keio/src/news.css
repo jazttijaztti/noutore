@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* header_part */
+
+header {
+  margin: 16px 32px;
+  padding: 16px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #eee;
+}
+#header-left {
+  display: flex;
+  align-items: center;
+}
+#header_company-name p {
+  font-size: 16px;
+  font-weight: 900;
+}
+#header_company-name p span {
+  font-size: 24px;
+  font-weight: 900;
+}
+#header_manu {
+  margin-left: 64px;
+}
+#header_manu ul {
+  display: flex;
+  align-items: center;
+}
+#header_manu ul li {
+  margin-right: 32px;
+}
+#header_manu ul li a{
+  font-size: 16px;
+  font-weight: 700;
+}
+#header_access {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+#header_access-call {
+  width: 200px;
+  padding: 8px 16px;
+  border: 2px solid #ffea00;
+  border-radius: 40px;
+  text-align: center;
+}
+#header_access-call p {
+  font-size: 16px;
+  font-weight: 700; 
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header_access-call p span img {
+  display: inline-block;
+  margin-right: 8px;
+}
+#header_access-call p:last-child {
+  font-size: 10px;
+  font-weight: 700;
+  color: #a9a9a9;
+}
+#header_access-mail {
+  width: 200px;
+  padding: 8px 16px;
+  margin-left: 24px;
+  background-color: #ffea00;
+  border-radius: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#header_access-mail p {
+  font-size: 16px;
+  font-weight: 700;
+}
+#header_access-mail p span img {
+  display: inline-block;
+  margin-right: 8px;
+}
+a:hover {
+  cursor: pointer;
+}
+
+
+/* よく使うcss */
+  margin: ;
+  font-size: ;
+  font-weight: ;
+  
+  display: flex;
+  justify-content: ;
+  align-items: ;
+
